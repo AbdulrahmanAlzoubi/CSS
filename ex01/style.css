@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positioning</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <h1>My Website</h1>
+    </nav>
+
+    <main>
+        <div class="card-container">
+
+            <div class="card">
+                <span class="badge">New</span>
+                <h2>Cybersecurity</h2>
+                <p>Learning penetration testing and system administration.</p>
+            </div>
+
+            <div class="card">
+                <h2>Linux</h2>
+                <p>Practicing Linux commands and system administration.</p>
+            </div>
+
+        </div>
+    </main>
+
+    <a class="back-to-top" href="#">Top</a>
+
+</body>
+</html>
