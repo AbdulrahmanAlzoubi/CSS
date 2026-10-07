@@ -1,35 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Positioning</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
 
-    <nav class="navbar">
-        <h1>My Website</h1>
-    </nav>
+main {
+    margin-top: 100px;
+}
 
-    <main>
-        <div class="card-container">
+.card-container {
+    position: relative;
+}
 
-            <div class="card">
-                <span class="badge">New</span>
-                <h2>Cybersecurity</h2>
-                <p>Learning penetration testing and system administration.</p>
-            </div>
+.card {
+    position: relative;
+    width: 250px;
+    padding: 30px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
 
-            <div class="card">
-                <h2>Linux</h2>
-                <p>Practicing Linux commands and system administration.</p>
-            </div>
+.badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 2;
+}
 
-        </div>
-    </main>
-
-    <a class="back-to-top" href="#">Top</a>
-
-</body>
-</html>
+.back-to-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 10;
+}
